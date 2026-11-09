@@ -25,3 +25,7 @@ spring:
           uri: lb://reporte-service
           predicates:
             - Path=/reporte/**
+        - id: atencion-service
+          uri: lb://atencion-service
+          predicates:
+            - Path=/atencion/**,/reparacion/**,/bono/**
