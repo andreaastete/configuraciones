@@ -21,3 +21,7 @@ spring:
           uri: lb://vehiculo-service
           predicates:
             - Path=/vehiculo/**
+        - id: reporte-service
+          uri: lb://reporte-service
+          predicates:
+            - Path=/reporte/**
