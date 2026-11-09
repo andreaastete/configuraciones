@@ -29,3 +29,7 @@ spring:
           uri: lb://atencion-service
           predicates:
             - Path=/atencion/**,/reparacion/**,/bono/**
+        - id: catalogo-service
+          uri: lb://catalogo-service
+          predicates:
+            - Path=/catalogo/**
